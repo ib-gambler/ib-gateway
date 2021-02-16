@@ -6,4 +6,4 @@ ENV TZ=Asia/Shanghai \
 WORKDIR /app
 ADD clientportal.gw.tar .
 
-ENTRYPOINT ./bin/run.sh root/conf.yaml
+CMD ["./bin/run.sh", "root/conf.yaml"]
